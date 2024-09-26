@@ -7,7 +7,7 @@ class Scanner:
     def __init__(self, ip, port_range):
         self.__lock = threading.Lock()
         self.ip = str(ip)
-        self.port_range = int(port_range)
+        self.port_range = int(port_range) + 1
         self.open_ports = []
         self.__threads = []
 
